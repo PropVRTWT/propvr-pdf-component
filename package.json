@@ -22,7 +22,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "publish": "npm run build && npm version patch && npm publish"
+    "npmpublish": "npm run build && npm version patch && npm publish"
   },
   "dependencies": {
     "vue": "^3.2.47"

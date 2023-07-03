@@ -1,8 +1,24 @@
 {
   "name": "propvr-pdf-component",
-  "private": true,
-  "version": "0.0.0",
+  "public": true,
+  "version": "0.0.8",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/pdf.umd.js",
+  "module": "./dist/pdf.es.js",
+  "exports": {
+   
+    "./dist/*.css": {
+      "import": "./dist/*.css",
+      "require": "./dist/*.css"
+    },
+    ".": {
+      "import": "./dist/pdf.es.js",
+      "require": "./dist/pdf.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
